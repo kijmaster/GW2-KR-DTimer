@@ -9,4 +9,6 @@ Based on:
 - a client web application (full javascript: require/backbone/marionette/boostrap)
 
 
-Feel free for comment & improvment if you use it, don't hesite to report bugs
+Feel free for comments / improvements and don't hesite to report bugs.
+
+Thanks.
