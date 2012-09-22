@@ -18,4 +18,4 @@ Thanks.
 
 ## Features
 
-- Nothing ATM, hey hey ! :)
+- Nothing ATM, hey hey ! ok.. support creation and edition of dragon entities.. pretty cool but useless :)
