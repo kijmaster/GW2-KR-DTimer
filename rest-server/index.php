@@ -13,8 +13,8 @@ require 'src/routers/KillRouter.php';
 // Build slim
 $app = new \Slim\Slim();
 
-DragonRouter::route($app);
 ServerRouter::route($app);
+DragonRouter::route($app);
 KillRouter::route($app);
 
 // And run it
