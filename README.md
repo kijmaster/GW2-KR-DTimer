@@ -9,7 +9,7 @@ Build for 'Roche d'Augure' server first, maybe more servers later if other playe
 
 Based on:
 - a rest-service written in PHP/PDO/Slim to access database
-- a client web application (full javascript: require/backbone/marionette/boostrap)
+- a client web application (full javascript: require/backbone/marionette/underscore/boostrap)
 
 
 Feel free for comments / improvements and don't hesite to report bugs.
