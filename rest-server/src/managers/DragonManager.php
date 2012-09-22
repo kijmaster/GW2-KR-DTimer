@@ -1,5 +1,5 @@
 <?php
-require 'src/DBManager.php';
+//require 'src/DBManager.php';
 
 class DragonManager
 {
