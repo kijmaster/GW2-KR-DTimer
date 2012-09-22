@@ -15,3 +15,7 @@ Based on:
 Feel free for comments / improvements and don't hesite to report bugs.
 
 Thanks.
+
+## Features
+
+- Nothing ATM, hey hey ! :)
