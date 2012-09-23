@@ -35,22 +35,28 @@ class ServerManager
     private static function splitServersByZones ($servers){
         $zones = array();
         $curZone = array();
+        $zoneServers = array();
         $curZoneName = "";
         foreach($servers as $server){
             // New Zone to manage
             if($server->zone != $curZoneName){
-                if(sizeof($curZone) > 0){
-                    $zones[$curZoneName] = $curZone;
+                if(sizeof($zoneServers) > 0){
+                    $curZone['name'] = $curZoneName;
+                    $curZone['servers'] = $zoneServers;
+                    $zones[] = $curZone;
                 }
                 $curZoneName = $server->zone;
                 $curZone = array();
+                $zoneServers = array();
             }
             // Add current server to current zone
-            $curZone[] = $server;
+            $zoneServers[] = $server;
         }
         // Add last zone
-        if(sizeof($curZone) > 0){
-            $zones[$curZoneName] = $curZone;
+        if(sizeof($zoneServers) > 0){
+            $curZone['name'] = $curZoneName;
+            $curZone['servers'] = $zoneServers;
+            $zones[] = $curZone;
         }
         return $zones;
     }
