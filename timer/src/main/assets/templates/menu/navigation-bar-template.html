@@ -16,27 +16,27 @@
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="nav-header">EU Servers</li>
-                            <li>
-                                <a onclick="">Roche d'Augure</a>
-                            </li>
-                            <li class="hide">
-                                <a onclick="">Server 2</a>
-                            </li>
+                            {{#each zonesList}}
+                            <li class="nav-header">{{name}} Servers</li>
+                                {{#each servers}}
+                                <li>
+                                    <a id="srv_{{id}}" class="selectServer">{{name}}</a>
+                                </li>
+                                {{/each}}
                             <li class="divider"></li>
-                            <li class="nav-header">US Servers</li>
-                            <li>
-                                <a onclick="alert('you have selected server 3');">Server 3</a>
-                            </li>
-                            <li>
-                                <a onclick="">Server 4</a>
-                            </li>
+                            {{/each}}
                         </ul>
+
                     </li>
                 </ul>
                 <ul class="nav pull-right">
                     <li class="dropdown">
-                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            Administration
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                        </ul>
                 </ul>
             </div>
         </div>

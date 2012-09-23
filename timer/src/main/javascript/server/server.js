@@ -12,8 +12,8 @@ define(['backbone',
             Server.serverRouter = Backbone.Router.extend({
 
                 routes: {
-                    '' : 'default',
-                    'server/:serverId' : 'server'
+                    '' : 'default'
+                    //'server/:serverId' : 'server'
                 },
 
                 default: function(){

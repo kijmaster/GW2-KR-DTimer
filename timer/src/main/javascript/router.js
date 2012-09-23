@@ -1,15 +1,29 @@
 define(['backbone',
         'dtimer',
-        'server/server'],
+        'server/server',
+        'menu/menu'],
 
     function (Backbone,
               DTimer,
-              ServerModule) {
+              ServerModule,
+              MenuHelper) {
 
-        var AppRouter = Backbone.Router.extend({});
+        var AppRouter = Backbone.Router.extend({
+            routes: {
+                '' : 'menu'
+                //'server/:serverId' : 'server'
+            },
+
+            menu: function(){
+
+                // Create menu
+                MenuHelper.createLoggedMenu();
+
+            }
+        });
 
         // Init router for servers page
-        var serverRouter = new ServerModule.serverRouter();
+        //var serverRouter = new ServerModule.serverRouter();
 
         return AppRouter;
     });
