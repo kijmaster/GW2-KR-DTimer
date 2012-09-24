@@ -11,7 +11,7 @@ class DragonManager
             $stm = $db->query($sql);
             $dragons = $stm->fetchAll(PDO::FETCH_OBJ);
             $db = null;
-            echo '{ "dragons" : ' . json_encode($dragons) . '}';
+            echo json_encode($dragons);
         }catch(PDOException $e){
             echo '{ "error": { "text":' . $e->getMessage() . '}}';
         }

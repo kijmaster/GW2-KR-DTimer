@@ -11,19 +11,17 @@ define(['backbone',
         var AppRouter = Backbone.Router.extend({
             routes: {
                 '' : 'menu'
-                //'server/:serverId' : 'server'
             },
 
             menu: function(){
-
                 // Create menu
                 MenuHelper.createLoggedMenu();
-
             }
         });
 
-        // Init router for servers page
-        //var serverRouter = new ServerModule.serverRouter();
+        app = new AppRouter();
+
+        var serverRouter = new ServerModule.serverRouter();
 
         return AppRouter;
     });

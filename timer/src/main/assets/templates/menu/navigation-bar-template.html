@@ -9,10 +9,10 @@
             <a class="brand" href="#">GW2-KeepRunning Dragon Timer</a>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="dropdown">
+
                     <li class="dropdown">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                            Servers
+                            Dragons respawn
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
@@ -20,7 +20,7 @@
                             <li class="nav-header">{{name}} Servers</li>
                                 {{#each servers}}
                                 <li>
-                                    <a id="srv_{{id}}" class="selectServer">{{name}}</a>
+                                    <a href="#server/{{id}}" class="selectServer">{{name}}</a>
                                 </li>
                                 {{/each}}
                             <li class="divider"></li>
@@ -28,6 +28,17 @@
                         </ul>
 
                     </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            Donjons
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">Tools</li>
+                            <li>
+                                <a>Donjon timer</a>
+                            </li>
+                        </ul>
                 </ul>
                 <ul class="nav pull-right">
                     <li class="dropdown">

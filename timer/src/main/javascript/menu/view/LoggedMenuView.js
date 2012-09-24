@@ -13,7 +13,6 @@ define(['backbone.marionette', 'dtimer', //
             className: 'inner',
 
             events: {
-                //'change #lang': 'changeLanguage'
             },
 
             changeLanguage: function () {
@@ -35,9 +34,6 @@ define(['backbone.marionette', 'dtimer', //
                         self.render();
                     }
                 });
-
-                //TODO use this for put focus on current view on refresh
-                //var currentRoute = Backbone.history.fragment;
 
             }
 

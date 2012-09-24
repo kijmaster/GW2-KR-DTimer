@@ -25,89 +25,7 @@ a, a:hover {
     border: medium none;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-#request-headers .label {
-    padding: 8px 12px;
-    margin-right: 10px;
-    font-weight: normal;
-    line-height: 34px;
-    background-color: #ddd;
-    color: #333;
-    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
-    cursor: pointer;
-}
-#request-headers .label:hover{
-    color: #000;
-}
-#request-headers .close {
-    color: #000000;
-    float: none;
-    font-size: 16px;
-    font-weight: normal;
-    margin-left: 10px;
-    opacity: 0.4;
-    text-decoration: none;
-}
-#response {
-    margin-top: 18px;
-}
-#request form {
-    margin-bottom: 18px;
-}
-#request h3 {
-    margin-top: -5px;
-    margin-bottom: 18px;
-}
-#request h2{
-    margin-bottom: 18px;
-}
-#request h4{
-    margin-bottom: 8px;
-}
-#request label {
-    margin-right: 4px;
-}
-#request button {
-    margin-left: 2px;
-}
-#request .well {
-    border-radius: 4px;
-    padding: 8px;
-    margin-bottom: 18px;
-}
-#response h2 {
-    margin-bottom: 18px;
-}
-#response h3 {
-    margin-bottom: 10px;
-    margin-top: 18px;
-}
-#response pre{
-    min-height: 150px;
-}
-.pre {
-    background-color: #EEE;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px 4px 4px 4px;
-    display: block;
-    font-size: 12.95px;
-    line-height: 18px;
-    margin: 0 0 9px;
-    padding: 8.5px;
-    height: 600px;
-    resize: both;
-    overflow: hidden;
-}
-#response-body-preview iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-#response-body-preview textarea {
-    width: 100%;
-    height: 100%;
-    border: none;
-    overflow: auto;
-}
+
 #modal-oauth legend {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -234,7 +152,7 @@ span.header-value {
     overflow-y: scroll;
     padding-top: 60px;
 }
-
+/*
 .request-method-dropdown, .request-url-icons {
     border-radius: 0 3px 3px 0;
     margin-left: -1px;
@@ -251,11 +169,11 @@ span.header-value {
     vertical-align: middle;
     width: auto;
     cursor: pointer;
-}
+}*/
 .favorite-list-icon, .favorite-icon, .request-method-icon {
     margin: 0 1px 0 4px;
 }
-.request-method-dropdown .caret{
+/*.request-method-dropdown .caret{
     margin-top: 7px;
 }
 #request-method {
@@ -283,7 +201,7 @@ span.header-value {
     text-align: left;
     margin-top: 6px;
     overflow-x: hidden;
-}
+}*/
 .multivalues {
     list-style: none;
     margin-left: 0px;
@@ -297,10 +215,7 @@ span.header-value {
     width: 480px !important;
 }
 
-#response .overflow {
-    overflow: auto;
-}
-
+/*
 .request-header-reset {
     float:right;
     font-size: 11px;
@@ -318,7 +233,7 @@ span.header-value {
     border-bottom:1px solid #666;
     border-radius: 4px;
     background-color:#EEE;
-}
+}*/
 
 th.center, td.center {
     text-align: center;

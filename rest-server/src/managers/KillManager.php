@@ -13,7 +13,7 @@ class KillManager
             $stmt->execute();
             $kills = $stmt->fetchAll(PDO::FETCH_OBJ);
             $db = null;
-            echo '{ "kills" : ' . json_encode($kills) . '}';
+            echo json_encode($kills);
         }catch(PDOException $e){
             echo '{ "error": { "text":' . $e->getMessage() . '}}';
         }
@@ -27,7 +27,7 @@ class KillManager
             $stm = $db->query($sql);
             $kills = $stm->fetchAll(PDO::FETCH_OBJ);
             $db = null;
-            echo '{ "kills" : ' . json_encode($kills) . '}';
+            echo json_encode($kills);
         }catch(PDOException $e){
             echo '{"error":{"text":'. $e->getMessage() .'}}';
         }

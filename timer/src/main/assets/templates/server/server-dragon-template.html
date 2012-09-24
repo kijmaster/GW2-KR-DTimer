@@ -1,0 +1,43 @@
+
+<section id="dragon-{{id}}" class="dragon container" style="margin-top: 5px; display: block;">
+    <h3 style="color: #999;">
+        <a id="toggle-dragon-{{id}}" class="toggle-dragon" style="color: #999;">[+] {{name}}</a>
+    </h3>
+
+    <div id="dragon-supercontainer-{{id}}" class="dragon-supercontainer" style="display: none">
+
+<div id="dragon-container-{{id}}" style="display: block;">
+    <div class="overrideMimeTypeMessage"></div>
+    <ul id="dragon-tabs-{{id}}" class="nav nav-tabs">
+        <li class="active">
+            <a href="#dragon-infos-{{id}}" data-toggle="tab" rel="tooltip" title="Respawn times">Respawn details</a>
+        </li>
+        <li>
+            <a href="#dragon-stats-{{id}}" data-toggle="tab" rel="tooltip" title="Statistics on kills, etc.">Statistics</a>
+        </li>
+        <li>
+            <a id="ltab-{{id}}" href="#dragon-localization-{{id}}" data-toggle="tab" rel="tooltip" title="Get dragon localization">Localization</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="tab-content">
+    <div id="dragon-infos-{{id}}" class="dragon-infos tab-pane active">
+        <pre>
+            <span>Dragon data to display</span>
+        </pre>
+    </div>
+    <div id="dragon-stats-{{id}}" class="dragon-stats tab-pane">
+        <pre>
+            <span>Statistics on kills, etc.</span>
+        </pre>
+    </div>
+    <div id="dragon-localization-{{id}}" class="dragon-localization tab-pane">
+        <pre></pre>
+    </div>
+</div>
+
+    </div>
+
+</section>
